@@ -4,7 +4,7 @@ services:
     restart: always
     build: .
     ports:
-      - 86:3900
+      - 80:3900
     volumes:
       - ./:/code
     depends_on:
