@@ -6,10 +6,10 @@ const Personne = require('../personne');
 
 
 router.get('/', async (req, res,) => {
+    console.log("page index");
     try {
         var result = await Personne.find().exec();
-        res.render('index', { result: result }
-        );
+        res.render('index', { result: result });
     } catch (error) {
         res.status(500).send(error);
     }
